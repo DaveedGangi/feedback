@@ -145,7 +145,7 @@
     .bgHome{
         background-image:linear-gradient(to bottom , rgb(225, 234, 190),rgb(108, 227, 108), rgb(43, 43, 6));
         background-size: cover;
-        height:100svh;
+        height:100vh;
         width:100%;
         padding-bottom:12px;
         overflow: auto;
