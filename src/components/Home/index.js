@@ -40,7 +40,10 @@ class Home extends Component{
         this.setState({userText:event.target.value})
     }
 
-    addUserData=async()=>{
+    addUserData=async(event)=>{
+
+        event.preventDefault()
+
         const{stars,name,email,userText,employType}=this.state
         const details={
             id:uuidv4(),
