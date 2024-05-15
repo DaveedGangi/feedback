@@ -22,7 +22,7 @@
 .userInputs{
     background-color: rgb(49, 117, 117);
     height:200px;
-    width:300px;
+    width:310px;
     color:rgb(12, 19, 26);
     padding:22px;
     border-radius: 12px;
@@ -54,61 +54,82 @@
     color:azure;
     border:0px;
     border-radius: 4px;
-    height:28px;
-    width:88px;
+    height:33px;
+    width:120px;
     outline:none;
     margin-bottom: 22px;
     cursor: pointer;
 }
 .userInputName{
-    width:200px;
+    width:300px;
     outline:none;
     background-color: aqua;
     border:0px;
-    height: 33px;
+    height: 44px;
     margin-bottom:12px;
     border-radius: 4px;
     margin-top: 12px;
     padding-left: 7px;
 }
 .userInputEmail{
-    width:200px;
+    width:300px;
     outline:none;
     background-color: aqua;
     border:0px;
-    height: 33px;
+    height: 44px;
     margin-bottom: 12px;
     border-radius: 4px;
     padding-left: 7px;
 }
 .userInputText{
-    width:200px;
+    width:330px;
     padding:12px;
     outline: none;
     background-color: aqua;
     border:0px;
-    height: 88px;
+    height: 140px;
     border-radius: 4px;
     margin-bottom: 12px;
 
 }
 .buttonStar{
     border:0px;
-    background-color: aquamarine;
-    color:brown;
-    height:33px;
-    width:44px;
+  
+   background-color: aquamarine;
+   color: brown;
+   
+    height:44px;
+    width:60px;
+    font-weight: 600;
+    
+   
     border-radius: 12px;
     cursor: pointer;
 
 }
 
+.colorStar{
+    background-color: chocolate;
+   
+    color:rgb(254, 255, 255);
+    border:0px;
+    font-weight: 600;
+  
+
+   
+    height:44px;
+    width:60px;
+   
+    border-radius: 12px;
+    cursor: pointer;
+}
+
 .options{
-    width:210px;
+    width:310px;
     outline:none;
     background-color: aqua;
     border:0px;
-    height: 33px;
+    height: 44px;
     margin-bottom:12px;
     border-radius: 4px;
     margin-top: 12px;
@@ -117,4 +138,150 @@
 
 .employeeType{
     font-weight: 600;
+}
+
+
+@media (max-width:767px){
+    .bgHome{
+        background-image:linear-gradient(to bottom , rgb(225, 234, 190),rgb(108, 227, 108), rgb(43, 43, 6));
+        background-size: cover;
+        height:100svh;
+        width:100%;
+        padding-bottom:12px;
+        overflow: auto;
+        
+    }
+    .stars{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        text-align: center;
+    }
+    .userDetails{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        text-align: center;
+    }
+    .userInputs{
+        background-color: rgb(49, 117, 117);
+        height:200px;
+        width:300px;
+        color:rgb(12, 19, 26);
+        padding:22px;
+        border-radius: 12px;
+        margin-bottom: 22px;
+        font-weight: 600;
+    }
+    .styleForUserData{
+        display: flex;
+        flex-direction: row;
+        justify-content:space-around;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .userName{
+        font-size:17px;
+        
+    }
+    .userEmail{
+        font-size:17px;
+    }
+    .userStars{
+        font-size:17px;
+    }
+    .userText{
+        font-size:12px;
+    }
+    .submit{
+        background-color: rgb(29, 30, 28);
+        color:azure;
+        border:0px;
+        border-radius: 4px;
+        height:28px;
+        width:88px;
+        outline:none;
+        margin-bottom: 22px;
+        cursor: pointer;
+    }
+    .userInputName{
+        width:200px;
+        outline:none;
+        background-color: aqua;
+        border:0px;
+        height: 33px;
+        margin-bottom:12px;
+        border-radius: 4px;
+        margin-top: 12px;
+        padding-left: 7px;
+    }
+    .userInputEmail{
+        width:200px;
+        outline:none;
+        background-color: aqua;
+        border:0px;
+        height: 33px;
+        margin-bottom: 12px;
+        border-radius: 4px;
+        padding-left: 7px;
+    }
+    .userInputText{
+        width:200px;
+        padding:12px;
+        outline: none;
+        background-color: aqua;
+        border:0px;
+        height: 88px;
+        border-radius: 4px;
+        margin-bottom: 12px;
+    
+    }
+    .buttonStar{
+        border:0px;
+      
+       background-color: aquamarine;
+       color: brown;
+       
+        height:33px;
+        width:44px;
+        
+       
+        border-radius: 12px;
+        cursor: pointer;
+    
+    }
+    
+    .colorStar{
+        background-color: chocolate;
+       
+        color:brown;
+        border:0px;
+      
+    
+       
+        height:33px;
+        width:44px;
+       
+        border-radius: 12px;
+        cursor: pointer;
+    }
+    
+    .options{
+        width:210px;
+        outline:none;
+        background-color: aqua;
+        border:0px;
+        height: 33px;
+        margin-bottom:12px;
+        border-radius: 4px;
+        margin-top: 12px;
+        padding-left: 7px;
+    }
+    
+    .employeeType{
+        font-weight: 600;
+    }
+    
+
+
 }

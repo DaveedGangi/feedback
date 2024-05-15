@@ -2,8 +2,6 @@
 import {Component} from "react"
 
 
-
-
 import {v4 as uuidv4} from "uuid"
 
 import NavBar from "../NavBar"
@@ -25,6 +23,7 @@ class Home extends Component{
 
 
     userStar=(event)=>{
+      
         this.setState({stars:event.target.value})
     }
 
@@ -75,8 +74,9 @@ class Home extends Component{
     }
 
     render(){
-        const{name,email,listData,userText}=this.state
+        const{name,email,listData,userText,stars}=this.state
         console.log(listData)
+        console.log(typeof(stars))
 
         
         return(
@@ -86,11 +86,14 @@ class Home extends Component{
                 <div className="stars">
                 <div>
                     <h1>Rate below from 1-5</h1>
-                    <button  className="buttonStar" onClick={this.userStar} value="1" type="button">1</button>&nbsp;
-                    <button  className="buttonStar" onClick={this.userStar} value="2" type="button">2</button>&nbsp;
-                    <button  className="buttonStar" onClick={this.userStar} value="3" type="button">3</button>&nbsp;
-                    <button  className="buttonStar" onClick={this.userStar} value="4" type="button">4</button>&nbsp;
-                    <button  className="buttonStar" onClick={this.userStar} value="5" type="button">5</button>
+                    
+                      
+                  
+                    <button  className={stars<=0?"buttonStar":"colorStar"}  onClick={this.userStar} value="1" type="button">1</button>&nbsp;
+                    <button  className={stars<=1?"buttonStar":"colorStar"} onClick={this.userStar} value="2" type="button">2</button>&nbsp;
+                    <button  className={stars<=2?"buttonStar":"colorStar"} onClick={this.userStar} value="3" type="button">3</button>&nbsp;
+                    <button  className={stars<=3?"buttonStar":"colorStar"} onClick={this.userStar} value="4" type="button">4</button>&nbsp;
+                    <button  className={stars<=4?"buttonStar":"colorStar"} onClick={this.userStar} value="5" type="button">5</button>
                 </div>
                 </div>
                 <div className="userDetails">
